@@ -1,0 +1,414 @@
+/* Start Variables */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+@font-face {
+    font-family: "NetflixSans";
+    src: url('../font/NetflixSans-Bold.otf');
+    src: url('../font/NetflixSans-Bold.woff2') format('.woff2'),
+        url('../font/NetflixSans-Light.otf') format('.otf'),
+        url('/font/NetflixSans-Light.woff2') format('.woff2'),
+        url('../font/NetflixSans-Medium.otf') format('.otf');
+}
+body {
+    font-family: "NetflixSans", sans-serif;
+    background-color: #00081d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* End Variables */
+/* Start Nav  */
+nav {
+    background-color: transparent;
+    height: 86px;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 86px;
+}
+nav .container .logo img {
+    width: 173px;
+    height: 106px;
+}
+nav .container .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .container .links button {
+    width: 76px;
+    height: 32px;
+    background-color: #E50914;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+nav .container .links button:hover {
+    background-color: #cf050f; 
+    transition: 0.3s ease;    
+}
+nav .container .links .lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+    width: 126px;
+    height: 32px;
+}
+nav .container .links .lang i {
+    color: #f4f4f4;
+    font-size: 14px;
+}
+nav .container .links .lang a {
+    margin: 8px;
+    color: #f4f4f4;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Start Nav  */
+/* Hero Section  */
+.hero {
+    display: flex;
+    min-height: 47.5rem;
+}
+.hero .container {
+    display: flex;
+    background-image: radial-gradient(93.75% 105.88% at 0.39% 99.26%, rgba(150, 1, 7, 0.4) 1.42%, rgba(30, 1, 66, 0.51) 53.8%, rgba(13, 14, 32, 0) 100%),
+            linear-gradient(98.24deg, #1D0005 14.75%, rgba(0, 8, 29, 0.48) 100%),
+            url(../image/hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1807px;
+        height: 760px;
+        border-radius: 20px;
+}
+.hero .container .info {
+    padding: 11.875rem min(10%, 6.25rem) 6.25rem;
+
+}
+.hero .container .info h1 {
+    color: #ffffff;
+    font-size: 88px;
+    width: 1127px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 6.25rem;
+}
+.hero .container .info h2 {
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 6.25rem;
+    margin: 0;
+}
+.hero .container .info p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    line-height: 1.875rem;
+    margin: 0;
+}
+
+.hero .container .info .det {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.hero .container .info .det form input[type=search] {
+    border: 1px solid rgb(98, 95, 97);;
+    width: 376.5px;
+    height: 56px;
+    outline: none;
+    color: transparent;
+    color: #f4f4f4;
+    padding: 10px;
+    background: #1B0F18;
+}
+.hero .container .info button {
+    display: inline-block;
+    width: 201px;
+    height: 56px;
+    background-color: #E50914;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer; 
+    margin-left: 10px;
+}
+/* Hero Section  */    
+.row-1 {
+    margin-top: 50px;
+}
+.row-1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 152px 12px ;
+}
+.row-1 .container image img {
+    width: 100%;
+
+}
+
+.row-1 .container .info h1 {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
+    margin: 0;
+    line-height: 5.1875rem;
+}
+.row-1 .container .info p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    width: 740px;
+    height: 50px;
+    margin: 0;
+    line-height: 1.875rem;
+}
+
+.row-2 {
+    margin-top: 50px;
+}
+
+.row-2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 152px 12px;
+}
+
+.row-2 .container image img {
+    width: 100%;
+
+}
+
+.row-2 .container .info {
+    margin-left:50px ;
+}
+
+.row-2 .container .info h1 {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
+    margin: 0;
+    line-height: 5.1875rem;
+}
+
+.row-2 .container .info p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    width: 740px;
+    height: 50px;
+    margin: 0;
+
+    line-height: 1.875rem;
+}
+
+.row-3 {
+    margin-top: 50px;
+}
+
+.row-3 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 152px 12px;
+}
+
+.row-3 .container image img {
+    width: 100%;
+
+}
+
+.row-3 .container .info {
+    margin-left: 50px;
+}
+
+.row-3 .container .info h1 {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 900;
+    margin: 0;
+    line-height: 4.1875rem;
+}
+
+.row-3 .container .info p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    width: 740px;
+    height: 50px;
+    margin: 0;
+    line-height: 1.875rem;
+}
+/* Questions */
+
+.Questions {
+    margin-top: 80px;
+}
+.Questions h1 {
+    margin: 0;
+    color: #ffffff;
+    margin-left: 149px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.Questions .container {
+    display: flex;
+    
+    padding: 12px 152px 12px;
+    flex-direction: column;
+}
+.Questions .container .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1503px;
+    height: 83px;
+    background-color: #132144;
+    padding: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.Questions .container .info:hover {
+    background-color: #1b2d58;
+    transition: 0.3s ease;
+}
+.Questions .container .info .row-1 {
+    margin: 0;
+}
+.Questions .container .info .row-1 h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+.Questions .container .info .icon {
+    color: #ffffff;
+    font-size: 24px;
+}
+.Questions .container p {
+    margin: 0;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.Questions .container .det {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.Questions .container .det form input[type=search] {
+    border: 1px solid rgb(98, 95, 97);
+    ;
+    width: 376.5px;
+    height: 56px;
+    outline: none;
+    color: transparent;
+    color: #f4f4f4;
+    padding: 10px;
+    background: #1B0F18;
+}
+
+.Questions .container button {
+    display: inline-block;
+    width: 201px;
+    height: 56px;
+    background-color: #E50914;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* Questions */
+
+/* footer */
+footer {
+    margin-top: 90px;
+}
+footer .main-titlte {
+    display: flex;
+    color: #bdbcbc;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 149px;
+    margin-bottom: 50px;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0  152px 54px 152px;
+
+}
+footer .container .card ul li {
+    margin-bottom: 10px;
+}
+footer .container .card ul li a {
+    color: #bdbcbc;
+    font-size: 14px;
+    text-decoration: underline;
+}
+footer .links {
+    margin: 0;
+    margin-left: 133px;
+    padding-bottom: 100px;
+}
+footer .links .lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+    width: 126px;
+    height: 32px;
+}
+
+footer .links .lang i {
+    color: #f4f4f4;
+    font-size: 14px;
+}
+
+footer  .links .lang a {
+    margin: 8px;
+    color: #f4f4f4;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* footer */
